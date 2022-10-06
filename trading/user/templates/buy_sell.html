@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block styles %} {% endblock %} {% block content %}
+Current Balance (USD) : {{balance}}
+{{form.csrf_token}}
+Buy / Sell
+{{form.stockID.label}} {{form.stockID(class="form-control")}} {% if form.stockID.errors %}
+{% for error in form.stockID.errors %}
+{{ error }}
+{% endfor %}
+{% endif %}
+{{form.transactionType.label}} {{form.transactionType(class="form-control")}} {% if form.transactionType.errors %}
+{% for error in form.transactionType.errors %}
+{{ error }}
+{% endfor %}
+{% endif %}
+{{form.orderType.label}} {{form.orderType}} {% if form.orderType.errors %}
+{% for error in form.orderType.errors %}
+{{ error }}
+{% endfor %}
+{% endif %}
+{{form.orderVolume.label}} {{form.orderVolume(class="form-control")}} {% if form.orderVolume.errors %}
+{% for error in form.orderVolume.errors %}
+{{ error }}
+{% endfor %}
+{% endif %}
+{{ error }}
+Submit Order
+{% endblock %} {% block scripts %} {% endblock %}
