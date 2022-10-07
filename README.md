@@ -1,5 +1,12 @@
 # StockTrading-Platform
-Author - SakethVangala11, PranaviSan, kalyan-karnati, mukunda-p, srihithareddy-k
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<!----->
+[![Open Issues](https://img.shields.io/github/issues/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/issues)
+<!----->
+[![Stars](https://img.shields.io/github/forks/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/network/members)
+<!----->
+[![codecov](https://codecov.io/gh/kalyan-karnati/StockTrading-Platform/branch/dev/graph/badge.svg?token=SmiSDihWvE)](https://codecov.io/gh/kalyan-karnati/StockTrading-Platform)
 
 ## Installation
  - Install python (recommended - V3.7)
@@ -9,8 +16,9 @@ Author - SakethVangala11, PranaviSan, kalyan-karnati, mukunda-p, srihithareddy-k
  - Install packages - `pip install -r requirements.txt`
  - After successfully installation, run the project `python wsgi.py`
 
-### DB
-DB is located at `.\trading`
-
-### Architecture
----
+## Team Members:
+- Kalyan Karnati
+- Mukunda Varma Pericherla
+- Pranavi Sharma Sanganabhatla
+- Saketh Vangala
+- Srihitha Reddy Kaalam
