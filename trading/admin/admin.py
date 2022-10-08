@@ -52,6 +52,7 @@ def dashboard():
     return render_template("/dashboard.html", error=error, form=form, stocks=stocksData, marketHours=marketHoursData,
                            marketHoursform=marketHoursform, marketHolidaysform=marketHolidaysform)
 
+
 @admin_bp.route("/get/market_holidays", methods=['GET', 'POST'])
 def get_market_holidays():
     holidays = MarketHolidays.query

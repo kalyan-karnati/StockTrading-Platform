@@ -1,8 +1,9 @@
-from flask import Blueprint, redirect, render_template, request, url_for
+from flask import Blueprint, redirect, render_template, flash, request, url_for
 from flask_login import logout_user, current_user, login_user
 
 from .forms import LoginForm, SignupForm
 from .models import db, User
+from .. import login_manager
 
 auth_bp = Blueprint(
     'auth_bp', __name__,
@@ -91,6 +92,21 @@ def login():
         else:
             error = 'Invalid details'
     return render_template("/authentication.html", form=form, error=error)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    """Check if user is logged-in upon page load."""
+    if user_id is not None:
+        return User.query.get(user_id)
+    return None
+
+
+@login_manager.unauthorized_handler
+def unauthorized():
+    """Redirect unauthorized users to Login page."""
+    flash('You must be logged in to view that page.')
+    return redirect(url_for('auth_bp.login'))
 
 
 @auth_bp.route("/logout")
