@@ -28,10 +28,12 @@ def create_app():
         from .admin import admin
         from .user import user
 
+        from .errors import errors
         # Register Blueprints
         app.register_blueprint(auth.auth_bp)
         app.register_blueprint(admin.admin_bp)
         app.register_blueprint(user.user_bp)
+        app.register_blueprint(errors.errors_bp)
 
         # creating db tables
         db.create_all()
