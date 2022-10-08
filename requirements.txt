@@ -53,3 +53,4 @@ Flask-APScheduler
 flask-socketio
 selenium
 coverage
+pytest
