@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, request, url_for
+from flask import Blueprint, redirect, render_template, request, url_for
 from flask_login import logout_user, current_user, login_user
 
 from .forms import LoginForm, SignupForm
@@ -49,7 +49,7 @@ def signup():
             error = ''
             for _, values in form.errors.items():
                 error = values[0] + '\n'
-    return form
+    return render_template("/register.html", form=form, error=error)
 
 
 @auth_bp.route('/', methods=['GET', 'POST'])
@@ -87,10 +87,10 @@ def login():
                     error = 'Invalid Password'
                 else:
                     error = 'System Currently Down. Try after some time'
-            return form
+            return render_template("/authentication.html", form=form, error=error)
         else:
             error = 'Invalid details'
-    return form
+    return render_template("/authentication.html", form=form, error=error)
 
 
 @auth_bp.route("/logout")
