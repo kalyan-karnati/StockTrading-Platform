@@ -6,8 +6,8 @@ from trading import *
 from trading.auth.auth import *
 from trading.auth.models import *
 from trading.auth.forms import *
-from test_engine import app
-from test_engine import url
+from .test_engine import app
+from .test_engine import url
 
 class TestAuth(unittest.TestCase):
 

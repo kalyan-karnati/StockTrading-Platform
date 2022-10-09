@@ -4,8 +4,8 @@ import requests
 from datetime import datetime
 from trading import *
 from trading.errors.errors import *
-from test_engine import app
-from test_engine import url
+from .test_engine import app
+from .test_engine import url
 
 class Testerrors(unittest.TestCase):
 
