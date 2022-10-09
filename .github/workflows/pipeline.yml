@@ -26,13 +26,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Running test cases with pytest
-        run: |
-          pytest test/test_auth.py
-          pytest test/test_admin.py
-          pytest test/test_engine.py
-          pytest test/test_user.py
-      - name: Generate Report
+      - name: Run test cases and Generate Report
         run: |
           pip install coverage
           coverage run -m pytest
