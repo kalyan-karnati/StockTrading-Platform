@@ -11,7 +11,11 @@
 ![GitHub contributors](https://img.shields.io/badge/Contributors-5-blue)
 [![Build-And-Test](https://github.com/kalyan-karnati/StockTrading-Platform/actions/workflows/pipeline.yml/badge.svg)](https://github.com/kalyan-karnati/StockTrading-Platform/actions/workflows/pipeline.yml)
 [![DOI](https://zenodo.org/badge/545725634.svg)](https://zenodo.org/badge/latestdoi/545725634)
-
+[![GitHub Release](https://img.shields.io/github/release/kalyan-karnati/StockTrading-Platform.svg)](https://github.com/kalyan-karnati/StockTrading-Platform/releases)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/kalyan-karnati/StockTrading-Platform.svg)](https://img.shields.io/github/repo-size/kalyan-karnati/StockTrading-Platform.svg)
+[![GitHub contributors](https://img.shields.io/github/contributors/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/graphs/contributors)
+[![Pull Requests](https://img.shields.io/github/issues-pr/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/pulls)
+![Supports Python](https://img.shields.io/pypi/pyversions/pytest)
 
 ## About StockTrading-Platform
 
