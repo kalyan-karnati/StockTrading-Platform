@@ -6,8 +6,8 @@ from trading import *
 from trading.user.user import *
 from trading.user.models import *
 from trading.user.forms import *
-from .test_engine import app
-from .test_engine import url
+from test_engine import app
+from test_engine import url
 
 class TestUser(unittest.TestCase):
 
