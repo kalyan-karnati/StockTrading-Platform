@@ -32,7 +32,11 @@ StockTrading-Platform is an platform where Owner and Trader of stocks transactio
  
 ## DEMO
 
-![![Video](https://github.com/kalyan-karnati/StockTrading-Platform/blob/dev/docs/Stock-Trading.mp4)](https://user-images.githubusercontent.com/59049329/194772565-f68ff6ce-8808-4369-9438-8f1e95007a8c.png)
+
+https://user-images.githubusercontent.com/59049329/194781197-eaf36d82-ec05-4bef-851b-d0098c6da319.mp4
+
+
+
 
 ## Installation guide
 
