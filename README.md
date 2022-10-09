@@ -1,5 +1,6 @@
 # StockTrading-Platform
-
+![image](https://user-images.githubusercontent.com/59049329/194774702-6af1c810-5d60-4746-afbd-3df559d41d70.png)
+<!-->
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Open Issues](https://img.shields.io/github/issues/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/issues)
 [![Stars](https://img.shields.io/github/forks/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/network/members)
@@ -27,7 +28,7 @@ StockTrading-Platform is an platform where Owner and Trader of stocks transactio
  
 ## DEMO
 
-![![Video](https://github.com/kalyan-karnati/StockTrading-Platform/blob/dev/docs/Stock-Trading.mp4)](https://user-images.githubusercontent.com/59049329/194772565-f68ff6ce-8808-4369-9438-8f1e95007a8c.png)]
+![![Video](https://github.com/kalyan-karnati/StockTrading-Platform/blob/dev/docs/Stock-Trading.mp4)](https://user-images.githubusercontent.com/59049329/194772565-f68ff6ce-8808-4369-9438-8f1e95007a8c.png)
 
 ## Installation guide
 
