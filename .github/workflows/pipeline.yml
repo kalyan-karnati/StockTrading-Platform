@@ -24,7 +24,6 @@ jobs:
           python-version: 3.8.0
       - name: Installing dependencies
         run: |
-          python wsgi.py
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Running test cases with pytest
@@ -34,4 +33,12 @@ jobs:
           pip install coverage
           coverage run -m pytest
       - name: Upload Coverage to Codecov
-        uses: codecov/codecov-action@v2g
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage1.xml,./coverage2.xml # optional
+          flags: unittests # optional
+          name: codecov-umbrella # optional
+          fail_ci_if_error: false # optional (default = false)
+          verbose: true # optional (default = false)
+
+    
