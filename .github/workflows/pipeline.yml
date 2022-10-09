@@ -4,9 +4,9 @@
 name: Build-And-Test
 on:
   push:
-    branches: [ "dev","master" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "dev","master" ]
+    branches: [ "master" ]
 
 jobs:
   # This workflow contains a single job called "build"
@@ -19,24 +19,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Installing Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8.0
       - name: Installing dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run test cases and Generate Report
+      - name: Running test cases with pytest
+        run: python -m unittest
+      - name: Generate Report
         run: |
           pip install coverage
           coverage run -m unittest
       - name: Upload Coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage1.xml,./coverage2.xml # optional
-          flags: unittests # optional
-          name: codecov-umbrella # optional
-          fail_ci_if_error: false # optional (default = false)
-          verbose: true # optional (default = false)
-
-    
+        uses: codecov/codecov-action@v2
