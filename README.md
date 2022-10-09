@@ -50,6 +50,11 @@ StockTrading-Platform is an platform where Owner and Trader of stocks transactio
 
 
 
+## Contributors:
+<a href = "https://github.com/kalyan-karnati/StockTrading-Platform/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=kalyan-karnati/StockTrading-Platform"/>
+</a>
+
 ## Team Members:
 - Kalyan Karnati
 - Mukunda Varma Pericherla
