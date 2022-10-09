@@ -28,6 +28,9 @@ jobs:
           pip install -r requirements.txt
       - name: Run test cases and Generate Report
         run: |
+          pytest test/test_auth.py
+          pytest test/test_admin.py
+          pytest test/test_user.py
           pip install coverage
           coverage run -m pytest
       - name: Upload Coverage to Codecov
