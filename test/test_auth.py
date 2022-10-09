@@ -24,4 +24,4 @@ class TestAuth(unittest.TestCase):
     def test_logout(self):
         tester = app.test_client(self)
         response = requests.post(url+"/logout")
-        self.assertEqual(response.status_code, 405)
+        self.assertEqual(response.status_code, 200)
