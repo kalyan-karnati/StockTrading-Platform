@@ -1,8 +1,11 @@
 import unittest
 import requests
+from apscheduler.schedulers.background import BackgroundScheduler
 
 from trading import create_app
 from trading import db
+
+sched = BackgroundScheduler(daemon=True)
 
 app=create_app()
 db=db.init_app(app)
