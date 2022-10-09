@@ -6,8 +6,8 @@ from trading import *
 from trading.admin.admin import *
 from trading.admin.models import *
 from trading.admin.forms import *
-from .test_engine import app
-from .test_engine import url
+from test_engine import app
+from test_engine import url
 
 class TestAdmin(unittest.TestCase):
 

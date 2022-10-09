@@ -21,14 +21,12 @@ jobs:
       - name: Installing Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8.0
+          python-version: 3.10.0
       - name: Installing dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Running test cases with pytest
-        run: python -m pytest
-      - name: Generate Report
+      - name: Run test cases and Generate Report
         run: |
           pip install coverage
           coverage run -m pytest
