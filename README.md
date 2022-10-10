@@ -45,16 +45,23 @@ https://user-images.githubusercontent.com/59049329/194781197-eaf36d82-ec05-4bef-
 2. Clone this repository to any folder
 
 3. Open Terminal in the cloned folder
+4. Linux and MacOS Users might need to install a few dependecies before installing requirements. 
+(This step might not be needed for Windows Users)
 
-4. Install Requirements:
+5. Install Requirements:
 ```
-  pip install -r requirements.txt
+pip install -r requirements.txt
+
 ```
-5. Run the following:
+In case, you have an issue installing the dependency psycopg2 in linux, replace the ```psycopg2==2.8.4``` 
+with ```psycopg2-binary==2.8.3``` in the requirements file and try re-installing all requirements.
+
+6. To start the server, please run this command:
 ```
   python wsgi.py
 ```
-6. Go to http://127.0.0.1/ for the UI.
+
+7. UI can be accessed using the URL http://127.0.0.1/.
 
 
 
