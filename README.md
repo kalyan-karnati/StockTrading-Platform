@@ -1,4 +1,4 @@
-# StockTrading-Platform
+# StoxTrade
 ![image](https://user-images.githubusercontent.com/59049329/194774702-6af1c810-5d60-4746-afbd-3df559d41d70.png)
 <!-->
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -17,9 +17,9 @@
 [![Pull Requests](https://img.shields.io/github/issues-pr/kalyan-karnati/StockTrading-Platform)](https://github.com/kalyan-karnati/StockTrading-Platform/pulls)
 ![Supports Python](https://img.shields.io/pypi/pyversions/pytest)
 
-## About StockTrading-Platform
+## About StoxTrade
 
-StockTrading-Platform is an platform where Owner and Trader of stocks transactions takes place.Owner is admin whereas Trader is user:
+StoxTrade is an platform where Owner and Trader of stocks transactions takes place.Owner is admin whereas Trader is user:
  
  ### Role of Owner(Admin):
  - Sets the Market timings.
