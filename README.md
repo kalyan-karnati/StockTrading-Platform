@@ -50,7 +50,8 @@ https://user-images.githubusercontent.com/59049329/194781197-eaf36d82-ec05-4bef-
 
 5. Install Requirements:
 ```
-  pip install -r requirements.txt
+pip install -r requirements.txt
+
 ```
 In case, you have an issue installing the dependency psycopg2 in linux, replace the ```psycopg2==2.8.4``` 
 with ```psycopg2-binary==2.8.3``` in the requirements file and try re-installing all requirements.
